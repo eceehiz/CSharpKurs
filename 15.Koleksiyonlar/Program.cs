@@ -7,8 +7,6 @@ namespace _15.Koleksiyonlar
     {
         static void Main(string[] args)
         {
-            //Koleksiyonlar, dizide olan veri kaybını önler.
-
             #region Dizide değerin kaybolduğunu görelim
             //string[] dizi = new string[] { "Adem", "Salih", "Ahmet" };
             //Console.WriteLine("önce " + dizi[0]);
@@ -624,10 +622,53 @@ namespace _15.Koleksiyonlar
             //    } 
             #endregion
 
+            #region Otopark yapalım
+            //    int step;
+            //    ArrayList otopark = new ArrayList();
 
+            //    for (int i = 0; i < 25; i++)
+            //    {
+            //        otopark.Add((i + 1).ToString());
+            //    }
+            //lbl:
+            //    step = 0;
+            //    foreach (string item in otopark)
+            //    {
+            //        step++;
+            //        if (item != step.ToString())
+            //        {
+            //            Console.ForegroundColor = ConsoleColor.Red;
+            //            Console.Write(item + "\t");
 
+            //        }
+            //        else
+            //        {
+            //            Console.ForegroundColor = ConsoleColor.Green;
+            //            Console.Write(item + "\t");
+            //        }
+            //        if (step % 5 == 0)
+            //            Console.WriteLine();
+            //    }
+            //    Console.ForegroundColor = ConsoleColor.White;
+            //    Console.Write("\narabayı hangi bölüme park etmek istiyorsunuz:");
+            //    int room = int.Parse(Console.ReadLine());
+            //    int deger = otopark.IndexOf(room.ToString());
+            //    if (deger > -1)
+            //    {
+            //        // otopark[deger] = "dolu(" + (deger + 1) + ")";
+            //        otopark.RemoveAt(deger);
+            //        otopark.Insert(deger, "dolu");
+            //        Console.Clear();
+            //    }
+            //    else
+            //    {
+            //        Console.Clear();
+            //        Console.WriteLine("seçtiğiniz bölüm şu anda dolu " + room);
+            //    }
+            //    goto lbl; 
+            #endregion
 
-
+            
 
 
 
@@ -730,8 +771,6 @@ namespace _15.Koleksiyonlar
     //} 
     #endregion
 
-
-
-
+   
 
 }

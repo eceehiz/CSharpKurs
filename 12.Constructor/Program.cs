@@ -76,6 +76,9 @@ namespace _12.Constructor
             //kisi2.UnvanKontrol();
             #endregion
 
+            #region Eşya örneği yapalım
+            //Telefon telefon = new Telefon(); 
+            #endregion
 
 
         }
@@ -242,7 +245,35 @@ namespace _12.Constructor
     //}
     #endregion
 
+    #region Constructor, Miras aldığı sınıf içinde nesne üretebilir. Eşya örneği yapalım
+    //class Esya
+    //{
+    //    public string Adi { get; set; }
+    //    public string Malzeme { get; set; }
+    //    public Esya()
+    //    {
+    //        Console.WriteLine("Eşya sınıfı çalıştı");
+    //    }
+    //}
 
+    //class ElektronikEsya : Esya
+    //{
+    //    public int GucKaynagi { get; set; }
+    //    public ElektronikEsya()
+    //    {
+    //        Console.WriteLine("Elektronik eşya sınıfı çalıştı");
+    //    }
+    //}
+
+    //class Telefon : ElektronikEsya
+    //{
+    //    public byte SarjSuresi { get; set; }
+    //    public Telefon()
+    //    {
+    //        Console.WriteLine("Telefon sınıfı çalıştı");
+    //    }
+    //} 
+    #endregion
 
 
 

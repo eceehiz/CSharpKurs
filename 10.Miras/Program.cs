@@ -27,7 +27,7 @@ namespace _10.Miras
             //anne.GozRengi = "Yeşil";
             //anne.Orgu = true;
             //anne.Makyaj = false;
-            //anne.Tesettür = true;
+            //anne.Tesettur = true;
 
             //ErkekCocuk erkekcocuk = new ErkekCocuk();
             //erkekcocuk.Adi = "Ege";
@@ -38,17 +38,17 @@ namespace _10.Miras
             //erkekcocuk.Sakal = false;
             //erkekcocuk.OkulNo = 989;
 
-            //KızCocuk kızCocuk = new KızCocuk();
-            //kızCocuk.Adi = "Sinem";
-            //kızCocuk.Soyadi = "Konak";
-            //kızCocuk.Yas = 15;
-            //kızCocuk.SacRengi = "Sarı";
-            //kızCocuk.GozRengi = "Mavi";
-            //kızCocuk.Makyaj = true;
-            //kızCocuk.Tesettur = false;
-            //kızCocuk.OkulNo = 125;
+            //KizCocuk kizCocuk = new KizCocuk();
+            //kizCocuk.Adi = "Sinem";
+            //kizCocuk.Soyadi = "Konak";
+            //kizCocuk.Yas = 15;
+            //kizCocuk.SacRengi = "Sarı";
+            //kizCocuk.GozRengi = "Mavi";
+            //kizCocuk.Makyaj = true;
+            //kizCocuk.Tesettur = false;
+            //kizCocuk.OkulNo = 125;
 
-            //Console.WriteLine("Konak ailesinin üyeleri" + "\nBabanın Adı: " + baba.Adi + "\nBabanın Yaşı: " + baba.Yas + "\nAnnenin Adı: " + anne.Adi + "\nBabanın Yeteneği: " + baba.Yetenek + "\nAnnenin Yaşı: " + anne.Yas + "\nErkek Çocuğun Adı: " + erkekcocuk.Adi + "\nErkek Çocuğun Yaşı: " + erkekcocuk.Yas + "\nKız Çocuğun Adı: " + kızCocuk.Adi + "\nKız Çocuğun Yaşı: " + kızCocuk.Yas);
+            //Console.WriteLine("Konak ailesinin üyeleri" + "\nBabanın Adı: " + baba.Adi + "\nBabanın Yaşı: " + baba.Yas + "\nAnnenin Adı: " + anne.Adi + "\nBabanın Yeteneği: " + baba.Yetenek + "\nAnnenin Yaşı: " + anne.Yas + "\nErkek Çocuğun Adı: " + erkekcocuk.Adi + "\nErkek Çocuğun Yaşı: " + erkekcocuk.Yas + "\nKız Çocuğun Adı: " + kizCocuk.Adi + "\nKız Çocuğun Yaşı: " + kizCocuk.Yas); 
             #endregion
 
             #region Kamyon, Araba, Gemi için özellikler girelim
@@ -108,63 +108,66 @@ namespace _10.Miras
             //veli.OdemeYap(); 
             #endregion
 
-            //Yönetici
-            Manager faruk = new Manager();
-            faruk.Name = "faruk";
-            faruk.SurName = "atik";
-            //Öğretmenler
-            Teacher ugur = new Teacher();
-            ugur.Name = "uğur";
-            ugur.SurName = "akbulut";
-            ugur.Salary = 50000;
-            Teacher ahmet = new Teacher();
-            ahmet.Name = "ahmet";
-            ahmet.SurName = "yayla";
-            ahmet.Salary = 10000;
-            //öğrenciler
-            Student beyza = new Student();
-            beyza.Name = "beyza";
-            beyza.SurName = "daldal";
-            Student fatih = new Student();
-            fatih.Name = "fatih";
-            fatih.SurName = "polat";
-            Student ilker = new Student();
-            ilker.Name = "ilker";
-            ilker.SurName = "şenel";
+            #region Öğretmen, öğrenci ilkerin çözümü
+
+            ////Yönetici
+            //Manager faruk = new Manager();
+            //faruk.Name = "faruk";
+            //faruk.SurName = "atik";
+            ////Öğretmenler
+            //Teacher ugur = new Teacher();
+            //ugur.Name = "uğur";
+            //ugur.SurName = "akbulut";
+            //ugur.Salary = 50000;
+            //Teacher ahmet = new Teacher();
+            //ahmet.Name = "ahmet";
+            //ahmet.SurName = "yayla";
+            //ahmet.Salary = 10000;
+            ////öğrenciler
+            //Student beyza = new Student();
+            //beyza.Name = "beyza";
+            //beyza.SurName = "daldal";
+            //Student fatih = new Student();
+            //fatih.Name = "fatih";
+            //fatih.SurName = "polat";
+            //Student ilker = new Student();
+            //ilker.Name = "ilker";
+            //ilker.SurName = "şenel";
 
 
-            beyza.AddTeacher(ugur);//ekleyemez
+            //beyza.AddTeacher(ugur);//ekleyemez
 
-            ugur.AddStudent(beyza);
-            ugur.AddStudent(fatih);
-            faruk.AddStudentFromTeacher(ilker, ugur);
+            //ugur.AddStudent(beyza);
+            //ugur.AddStudent(fatih);
+            //faruk.AddStudentFromTeacher(ilker, ugur);
 
-            ahmet.AddStudent(beyza);
-            ahmet.AddStudent(fatih);
-            // ahmet.AddStudent(ilker);
-            faruk.AddStudentFromTeacher(ilker, ahmet);
+            //ahmet.AddStudent(beyza);
+            //ahmet.AddStudent(fatih);
+            //// ahmet.AddStudent(ilker);
+            //faruk.AddStudentFromTeacher(ilker, ahmet);
 
 
-            fatih.AddTeacher(ugur);
-            ilker.AddTeacher(ugur);
-            beyza.AddTeacher(ugur);
-            fatih.AddTeacher(ahmet);
-            ilker.AddTeacher(ahmet);
-            beyza.AddTeacher(ahmet);
+            //fatih.AddTeacher(ugur);
+            //ilker.AddTeacher(ugur);
+            //beyza.AddTeacher(ugur);
+            //fatih.AddTeacher(ahmet);
+            //ilker.AddTeacher(ahmet);
+            //beyza.AddTeacher(ahmet);
 
-            faruk.AddEducator(ugur);
-            faruk.AddEducator(ahmet);
+            //faruk.AddEducator(ugur);
+            //faruk.AddEducator(ahmet);
 
-            beyza.ShowMyTeacher();
+            //beyza.ShowMyTeacher();
 
-            ugur.MyClassInfo();
-            ahmet.MyClassInfo();
+            //ugur.MyClassInfo();
+            //ahmet.MyClassInfo();
 
-            faruk.ShowAllTeacher();
+            //faruk.ShowAllTeacher();
 
-            faruk.EditSalary(ahmet, 78000000m);
+            //faruk.EditSalary(ahmet, 78000000m);
 
-            Console.WriteLine($"ahmet yayla yeni maaşı={ahmet.Salary}");
+            //Console.WriteLine($"ahmet yayla yeni maaşı={ahmet.Salary}"); 
+            #endregion
 
 
         }
@@ -200,7 +203,7 @@ namespace _10.Miras
     //        }
     //    }
     //}
-    //class Kadın : Kisi
+    //class Kadin : Kisi
     //{
     //    public bool Makyaj { get; set; }
     //    public bool Tesettur { get; set; }
@@ -213,7 +216,7 @@ namespace _10.Miras
     //{
     //    public decimal Maas { get; set; }
     //}
-    //class Anne : Kadın
+    //class Anne : Kadin
     //{
     //    public bool Orgu { get; set; }
     //}
@@ -221,10 +224,10 @@ namespace _10.Miras
     //{
     //    public int OkulNo { get; set; }
     //}
-    //class KızCocuk : Kadın
+    //class KizCocuk : Kadin
     //{
     //    public int OkulNo { get; set; }
-    //} 
+    //}
     #endregion
 
     #region Arac, Kamyon, Araba, Gemi classlarını oluşturalım
@@ -313,129 +316,131 @@ namespace _10.Miras
     //} 
     #endregion
 
-    class Person
-    {
-        public string Name { get; set; }
-        public string SurName { get; set; }
-    }
+    #region Kişi, öğretmen, öğrenci, müdür classları ilkerin çözümü
+    //class Person
+    //{
+    //    public string Name { get; set; }
+    //    public string SurName { get; set; }
+    //}
 
-    class Teacher : Person
-    {
-        public decimal Salary { get; set; }
+    //class Teacher : Person
+    //{
+    //    public decimal Salary { get; set; }
 
-        public byte i = 0;
-        public string[] MyStudentsName { get; set; } = new string[50];
-        public string[] MyStudentsSurName { get; set; } = new string[50];
-        public int[] MyStudentsId { get; set; } = new int[50];
+    //    public byte i = 0;
+    //    public string[] MyStudentsName { get; set; } = new string[50];
+    //    public string[] MyStudentsSurName { get; set; } = new string[50];
+    //    public int[] MyStudentsId { get; set; } = new int[50];
 
-        public void AddStudent(Student student)
-        {
-            if (i > 49)
-                Console.WriteLine("sınıf mevcudu dolu");
-            else
-            {
-                MyStudentsName[i] = student.Name;
-                MyStudentsSurName[i] = student.SurName;
-                MyStudentsId[i] = student.Id;
-                this.i++;
-            }
-        }
+    //    public void AddStudent(Student student)
+    //    {
+    //        if (i > 49)
+    //            Console.WriteLine("sınıf mevcudu dolu");
+    //        else
+    //        {
+    //            MyStudentsName[i] = student.Name;
+    //            MyStudentsSurName[i] = student.SurName;
+    //            MyStudentsId[i] = student.Id;
+    //            this.i++;
+    //        }
+    //    }
 
-        public void MyClassInfo()
-        {
-            Console.WriteLine($"{this.Name}'un öğrencileri");
-            for (int z = 0; z < this.i; z++)
-            {
-                Console.WriteLine(MyStudentsName[z] + " " + MyStudentsSurName[z]);
-            }
+    //    public void MyClassInfo()
+    //    {
+    //        Console.WriteLine($"{this.Name}'un öğrencileri");
+    //        for (int z = 0; z < this.i; z++)
+    //        {
+    //            Console.WriteLine(MyStudentsName[z] + " " + MyStudentsSurName[z]);
+    //        }
 
-        }
+    //    }
 
-    }
+    //}
 
-    class Student : Person
-    {
-        public int Id { get; set; }
-        public string[] MyTeacherName { get; set; } = new string[5];
-        public string[] MyTeacherSurName { get; set; } = new string[5];
-        public byte i = 0;
+    //class Student : Person
+    //{
+    //    public int Id { get; set; }
+    //    public string[] MyTeacherName { get; set; } = new string[5];
+    //    public string[] MyTeacherSurName { get; set; } = new string[5];
+    //    public byte i = 0;
 
-        public void AddTeacher(Teacher teacher)
-        {
-            if (teacher.MyStudentsName.Contains(this.Name) && teacher.MyStudentsSurName.Contains(this.SurName))
-            {
-                this.MyTeacherName[this.i] = teacher.Name;
-                this.MyTeacherSurName[this.i] = teacher.SurName;
-                //Console.WriteLine($"{this.Name}'nın öğretmeni {teacher.Name} {teacher.SurName} olmuştur");
-                i++;
+    //    public void AddTeacher(Teacher teacher)
+    //    {
+    //        if (teacher.MyStudentsName.Contains(this.Name) && teacher.MyStudentsSurName.Contains(this.SurName))
+    //        {
+    //            this.MyTeacherName[this.i] = teacher.Name;
+    //            this.MyTeacherSurName[this.i] = teacher.SurName;
+    //            //Console.WriteLine($"{this.Name}'nın öğretmeni {teacher.Name} {teacher.SurName} olmuştur");
+    //            i++;
 
-            }
-            else
-            {
-                Console.WriteLine($"Sayın {this.SurName} {teacher.Name} {teacher.SurName} seni öğrenci olarak eklemediği için onu" +
-                    $" öğretmen olarak ekleyemezsin");
-            }
+    //        }
+    //        else
+    //        {
+    //            Console.WriteLine($"Sayın {this.SurName} {teacher.Name} {teacher.SurName} seni öğrenci olarak eklemediği için onu" +
+    //                $" öğretmen olarak ekleyemezsin");
+    //        }
 
-        }
+    //    }
 
-        public void ShowMyTeacher()
-        {
-            Console.WriteLine($"{this.Name}'nın öğretmenleri");
-            for (int z = 0; z < i; z++)
-            {
-                Console.WriteLine(this.MyTeacherName[z] + " " + this.MyTeacherSurName[z]);
-            }
-        }
+    //    public void ShowMyTeacher()
+    //    {
+    //        Console.WriteLine($"{this.Name}'nın öğretmenleri");
+    //        for (int z = 0; z < i; z++)
+    //        {
+    //            Console.WriteLine(this.MyTeacherName[z] + " " + this.MyTeacherSurName[z]);
+    //        }
+    //    }
 
-    }
+    //}
 
-    class Manager : Person
-    {
-        public decimal[] TeacherSalary { get; set; } = new decimal[10];
-        public string[] TeacherName { get; set; } = new string[10];
-        public string[] TeacherSurName { get; set; } = new string[10];
-        public byte[] StudentPiece { get; set; } = new byte[10];
-        public int MyProperty { get; set; }
-        private byte i = 0;
+    //class Manager : Person
+    //{
+    //    public decimal[] TeacherSalary { get; set; } = new decimal[10];
+    //    public string[] TeacherName { get; set; } = new string[10];
+    //    public string[] TeacherSurName { get; set; } = new string[10];
+    //    public byte[] StudentPiece { get; set; } = new byte[10];
+    //    public int MyProperty { get; set; }
+    //    private byte i = 0;
 
-        public void AddEducator(Teacher teacher)
-        {
-            TeacherName[i] = teacher.Name;
-            TeacherSurName[i] = teacher.SurName;
-            TeacherSalary[i] = teacher.Salary;
-            StudentPiece[i] = teacher.i;
-            i++;
-        }
-        public void ShowAllTeacher()
-        {
-            Console.WriteLine("Öğretmenler");
-            for (int z = 0; z < i; z++)
-            {
-                Console.WriteLine(TeacherName[z] + " " + TeacherSurName[z] + " maaşı:"
-                    + TeacherSalary[z] + "\nSınıfındaki öğrenci sayısı:" + StudentPiece[z]);
-            }
-        }
+    //    public void AddEducator(Teacher teacher)
+    //    {
+    //        TeacherName[i] = teacher.Name;
+    //        TeacherSurName[i] = teacher.SurName;
+    //        TeacherSalary[i] = teacher.Salary;
+    //        StudentPiece[i] = teacher.i;
+    //        i++;
+    //    }
+    //    public void ShowAllTeacher()
+    //    {
+    //        Console.WriteLine("Öğretmenler");
+    //        for (int z = 0; z < i; z++)
+    //        {
+    //            Console.WriteLine(TeacherName[z] + " " + TeacherSurName[z] + " maaşı:"
+    //                + TeacherSalary[z] + "\nSınıfındaki öğrenci sayısı:" + StudentPiece[z]);
+    //        }
+    //    }
 
-        public void AddStudentFromTeacher(Student student, Teacher teacher)
-        {
-            if (i > 49)
-                Console.WriteLine("sınıf mevcudu dolu");
-            else
-            {
-                teacher.MyStudentsName[teacher.i] = student.Name;
-                teacher.MyStudentsSurName[teacher.i] = student.SurName;
-                teacher.MyStudentsId[teacher.i] = student.Id;
-                teacher.i++;
-            }
+    //    public void AddStudentFromTeacher(Student student, Teacher teacher)
+    //    {
+    //        if (i > 49)
+    //            Console.WriteLine("sınıf mevcudu dolu");
+    //        else
+    //        {
+    //            teacher.MyStudentsName[teacher.i] = student.Name;
+    //            teacher.MyStudentsSurName[teacher.i] = student.SurName;
+    //            teacher.MyStudentsId[teacher.i] = student.Id;
+    //            teacher.i++;
+    //        }
 
-        }
+    //    }
 
-        public void EditSalary(Teacher teacher, decimal salary)
-        {
-            teacher.Salary = salary;
-        }
+    //    public void EditSalary(Teacher teacher, decimal salary)
+    //    {
+    //        teacher.Salary = salary;
+    //    }
 
-    }
+    //} 
+    #endregion
 
 
 

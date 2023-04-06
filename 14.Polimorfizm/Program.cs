@@ -67,13 +67,12 @@ namespace _14.Polimorfizm
     }
 
     #region Person classı ve miras vereceği alt classları oluşturalım. Selam ver metodu olsun, bunu ezelim
+
     //class Person
     //{
-    //    public string Ad { get; set; }
-    //    public string Soyad { get; set; }
-    //    public virtual string SelamVer() //virtual: bunu değiştirebilirsin demek 
+    //    public virtual string SelamVer()
     //    {
-    //        return "Selamlar";
+    //        return " ";
     //    }
     //}
 
